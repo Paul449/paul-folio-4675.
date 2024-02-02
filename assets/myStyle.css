@@ -1,7 +1,13 @@
 header{
 
     background-color: #D3D3D3;
-    color:white;
+    color:black;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    
 }
 
 header h1{
@@ -9,20 +15,59 @@ header h1{
     border-style: solid;
     border-color: #20B2AA ;
     display: inline-block;
-    background-color: #20B2AA;
+    background-color:#F0FFFF;
+    position: relative;
+    
+    
 }
 
-header nav{
+.nav-bar{
 
-    color:blue;
-    display: inline;
-
+    color:black;
+    font-size: large;
+    display: inline-block;
 }
 
 
 .hero{
 
+background-image: url(https://designnotes.blog.gov.uk/wp-content/uploads/sites/53/2020/06/Portfolio-Desk-620x410.jpg);
+height: 500px;
+width: 700px;
+color: white;
+
+}
+
+.hero h1{
+
+position: relative;
+top: 200px;
+
+}
+
+.hero li{
 
 
+}
 
+.hero p{
+
+    position: relative;
+    
+}
+
+
+footer{
+
+background-color: #D3D3D3;
+color: white;
+text-align: center;
+padding: 30px;
+}
+
+@media screen and (max-width: 992px){
+    body{
+
+       background-color: blue; 
+    }
 }
