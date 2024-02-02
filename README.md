@@ -3,7 +3,7 @@ Create a portfolio where I will be able to show my web development progress and 
 
 ## installation
 
-
+N/A
 
 ## Usage
 

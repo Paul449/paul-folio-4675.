@@ -1,0 +1,28 @@
+header{
+
+    background-color: #D3D3D3;
+    color:white;
+}
+
+header h1{
+
+    border-style: solid;
+    border-color: #20B2AA ;
+    display: inline-block;
+    background-color: #20B2AA;
+}
+
+header nav{
+
+    color:blue;
+    display: inline;
+
+}
+
+
+.hero{
+
+
+
+
+}
