@@ -55,10 +55,13 @@ border-radius: 20px;
 
 .hero h1{
 
-position: relative;
-top: 200px;
-
+    position: relative;
+    top: 50px;
+    left: 596px;
+    font-size: 27px;
 }
+
+
 
 .background-img-list{
 border-color: grey;
@@ -66,17 +69,49 @@ border-style: solid;
 border-width: 5px;
 width:200px;
 background-color: #D3D3D3;
-height: 58px;
+height: 38px;
 padding: 10px;
 font-family: calibri;
 font-size: 20px;
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+align-content: center;
+position: relative;
+top: 368px;
 }
 
-.hero p{
+#one{
+padding-right: 10px;
+
+}
+
+#two{
+padding-right: 10px;
+
+}
+
+#three{
+padding-right: 10px;
+
+}
+
+#Hire-me{
 
     position: relative;
-    
+    top: 280px;
+    left: 493px;
+    height: 20px;
+    border-color: #d3d3d3;
+    border-width: 3px;
+    border-style: solid;
+    display: inline-block;
+    padding: 20px 15px;
+    background-color: gray;
+    font-size: large;
+
 }
+
 
 
 .about-me{
@@ -113,27 +148,27 @@ padding-left: 54px
     border-color: grey;
     border-style: solid;
     border-left: var(grey);
-    width: 400px;
-    height: 400px;
+    width: 200px;
+    height: 200px;
 }
 
 #first{
 
    background-image: url(https://www.fitsw.com/blog/wp-content/uploads/2018/04/Managing-Personal-Training-Clients-Contact-1.png); 
-   background-size: 400px;
+   background-size: 200px;
    border-radius: 20px;
 }
 
 #second{
    border-radius: 20px;
    background-image: url(https://m.media-amazon.com/images/I/71hSAIENHkL._AC_UF894,1000_QL80_.jpg);
-   background-size: 400px;
+   background-size: 200px;
 }
 
 #third{
 
     background-image: url(https://play-lh.googleusercontent.com/QRKGUXdH6MkihzOR4o3kWpzeGWN2XCabrFmEQjLK8DGZB3qELnZHSlxDO0e7AKpVwS4);
-    background-size: 400px;
+    background-size: 200px;
     border-radius: 20px;
     color: white;
 }
@@ -141,13 +176,12 @@ padding-left: 54px
 #fourth{
 border-radius: 20px;
 background-image: url(https://www.amitree.com/wp-content/uploads/2021/08/the-pros-and-cons-of-paper-to-do-lists.jpeg);
-background-size: 400px;
+background-size: 200px;
 }
 
-.Work h1{
 
 
-}
+
 
 
 .Work{
@@ -158,13 +192,28 @@ background-size: 400px;
  
 }
 
-.Contact.me{
+.Contact-me{
 display: flex;
 flex-wrap: wrap;
-
+align-items: center;
+position:relative;
+left: 70px;
 
 }
 
+.Contact-me h1{
+
+    border-right: 10px solid #D3D3D3;
+    height: 226px;
+    padding-top: 193px;
+}
+
+.Contact-me p{
+
+    padding:30px;
+    font-size: 24px;
+    
+}
 
 footer{
 
