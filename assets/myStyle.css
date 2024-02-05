@@ -1,3 +1,11 @@
+
+body{
+
+
+    background-color:#5F9EA0 ;
+
+}
+
 header{
 
     background-color: #D3D3D3;
@@ -17,15 +25,19 @@ header h1{
     display: inline-block;
     background-color:#F0FFFF;
     position: relative;
-    
+    left: 100px;
     
 }
 
-.nav-bar{
+header p{
 
     color:black;
     font-size: large;
     display: inline-block;
+    position: relative;
+    left: 1300px;
+    margin: 10px;
+
 }
 
 
@@ -33,8 +45,11 @@ header h1{
 
 background-image: url(https://designnotes.blog.gov.uk/wp-content/uploads/sites/53/2020/06/Portfolio-Desk-620x410.jpg);
 height: 500px;
-width: 700px;
+width: 1500px;
 color: white;
+position:relative;
+left: 99px;
+border-radius: 20px;
 
 }
 
@@ -45,15 +60,109 @@ top: 200px;
 
 }
 
-.hero li{
-
-
+.background-img-list{
+border-color: grey;
+border-style: solid;
+border-width: 5px;
+width:200px;
+background-color: #D3D3D3;
+height: 58px;
+padding: 10px;
+font-family: calibri;
+font-size: 20px;
 }
 
 .hero p{
 
     position: relative;
     
+}
+
+
+.about-me{
+
+    display: flex;
+    flex-wrap: wrap;
+   
+
+}
+
+.about-me h1{
+
+position: relative;
+top: 137px;
+padding-right: 31px;
+padding-left: 54px
+}
+
+.about-me p{
+
+    border-left: 10px solid #D3D3D3;
+    height: 226px;
+    padding-left: 63px;
+    padding-top: 62px;
+    margin-bottom: 59px;
+    margin-top: 59px;
+}
+
+
+
+.project-box{
+
+    border-width: 5px;
+    border-color: grey;
+    border-style: solid;
+    border-left: var(grey);
+    width: 400px;
+    height: 400px;
+}
+
+#first{
+
+   background-image: url(https://www.fitsw.com/blog/wp-content/uploads/2018/04/Managing-Personal-Training-Clients-Contact-1.png); 
+   background-size: 400px;
+   border-radius: 20px;
+}
+
+#second{
+   border-radius: 20px;
+   background-image: url(https://m.media-amazon.com/images/I/71hSAIENHkL._AC_UF894,1000_QL80_.jpg);
+   background-size: 400px;
+}
+
+#third{
+
+    background-image: url(https://play-lh.googleusercontent.com/QRKGUXdH6MkihzOR4o3kWpzeGWN2XCabrFmEQjLK8DGZB3qELnZHSlxDO0e7AKpVwS4);
+    background-size: 400px;
+    border-radius: 20px;
+    color: white;
+}
+
+#fourth{
+border-radius: 20px;
+background-image: url(https://www.amitree.com/wp-content/uploads/2021/08/the-pros-and-cons-of-paper-to-do-lists.jpeg);
+background-size: 400px;
+}
+
+.Work h1{
+
+
+}
+
+
+.Work{
+ display: flex;
+ flex-wrap: wrap;
+ flex-direction: row;
+ align-items: center;
+ 
+}
+
+.Contact.me{
+display: flex;
+flex-wrap: wrap;
+
+
 }
 
 
@@ -66,8 +175,45 @@ padding: 30px;
 }
 
 @media screen and (max-width: 992px){
-    body{
-
-       background-color: blue; 
+    header{
+     
+        background-color: #D3D3D3;
+        color:black;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: flex-start;
+        
     }
+}
+
+@media screen and (max-width: 992px) {
+
+    header h1{
+
+        border-style: solid;
+        border-color: #20B2AA ;
+        display: inline-block;
+        background-color:#F0FFFF;
+        position: relative;
+        left: 100px;
+        
+    }
+    
+}
+
+@media screen and (max-width:1705px){
+    
+    header p{
+
+        color:black;
+        font-size: large;
+        display: inline-block;
+        position: relative;
+        left: 1300px;
+        margin: 10px;
+    
+    }
+
 }
