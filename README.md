@@ -1,6 +1,11 @@
 # paul-folio-4675.
 Create a portfolio where I will be able to show my web development progress and skills to potential employers.
 
+## Description
+
+This project is about creating my personal protfolio to be able to deploy my project pushed to my Github after creating each one on my local computer;
+a portfolio is eesntial for any developer to demosntrate skills they have to show to employers looking for developer when opening a job position.
+
 ## installation
 
 N/A
@@ -14,8 +19,12 @@ shown in the next section below.
 ## screenshot
 
 here is the link of the deployed application:
+![screenshot](portfolio sc.png)
 
+## Credits
 
-## links
+N/A
 
 ## License
+
+[link text](https://github.com/Paul449/paulfolio/blob/main/LICENSE)
