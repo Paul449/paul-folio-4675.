@@ -18,14 +18,16 @@ shown in the next section below.
 
 ## screenshot
 
-here is the link of the deployed application:
-![screenshot](portfolio sc.png)
+screenshot:
+![screenshot](images/portfolio%20sc.png)
 
 ## links
 
-[Link here] ()
+here is the link of the deployed application and profile:
 
-[Link here] ()
+[Link here] (https://paul449.github.io/paulfolio/)
+
+[Link here] (https://github.com/Paul449)
 
 ## Credits
 
