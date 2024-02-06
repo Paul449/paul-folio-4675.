@@ -21,6 +21,12 @@ shown in the next section below.
 here is the link of the deployed application:
 ![screenshot](portfolio sc.png)
 
+## links
+
+[Link here] ()
+
+[Link here] ()
+
 ## Credits
 
 N/A
