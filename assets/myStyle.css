@@ -1,232 +1,287 @@
 
-body{
+
+:root{                                              /*reusing properties applied to different elements using CSS variables defined in this section called root */
+
+--border-color: #d3d3d3; /*declaring a variable named border-color with a value of the color identified as #d3d3d3*/
+--text-color: white; /*declaring a variable where text color of any element will be white*/
+--border: 5px solid black; /*declaring a variable to apply a border property at any element*/
+--background-color:grey; /*declaring a variable where I will apply color grey in the backgorund of any element*/
+--display:inline-block; /*declaring a variable where I will apply this display feature to make some child elements to take just some space inside of a line*/
+--border-2: 10px solid white; /*declaring a variable where I will be applying another botder but with different values for other elements*/
+}
 
 
-    background-color:#5F9EA0 ;
+
+body{                                       /*CSS selector refering to the body element to apply CSS properties*/
+
+
+    background-color:#5F9EA0 ; /* Styling background color of green to the body element*/
 
 }
 
-header{
+                                          /*Styling header section with navigation bar included*/
 
-    background-color: #D3D3D3;
-    color:black;
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: flex-start;
+
+header{                                   /*Styling the header section in general*/
+    display: var(--display); /*applying CSS variable called display to apply inline-block value to header elements*/
+    background-color: var(--border-color); /*applying a CSS variable called border color to give the values from rott section applied to this particular element*/
+    color:black; /*specifying color black for text inside of header content*/
+    position: relative; /*specifying how I will move the elements of the header section*/
+    display: flex; /*converting my header element into a flex container, so I am able to position my child elements differently*/
+    flex-wrap: wrap; /*wrapping child elements in case that space takes more than viewport*/
+    flex-direction: row; /*displaying elements in a row*/
+    justify-content: flex-start; /*adjusting child elements to the left*/
     
 }
 
-header h1{
+header h1{                               /*applying specific style for heading 1 located on header*/
 
-    border-style: solid;
-    border-color: #20B2AA ;
-    display: inline-block;
-    background-color:#F0FFFF;
-    position: relative;
-    left: 100px;
+    border-style: solid; /* specifying how our border will be styled, so I chose solid option*/
+    border-color: #20B2AA ; /*specifying the color of my border, which is the color LightSeaGreen*/
+    display: inline-block; /*specifying the heading 1 to be in one line without taking extra space*/
+    background-color:#F0FFFF; /*specifying the background color of the heading 1 using the color Azure Mist*/
+    position: relative; /*specifying the position of my heading 1 on the header*/
+    left: 100px; /*movinh heading one to the right of the webpage. adjusting with pixels.*/
     
 }
 
-header p{
+header p{   /*paragraph content of my header section*/
 
-    color:black;
-    font-size: large;
-    display: inline-block;
-    position: relative;
-    left: 1300px;
-    margin: 10px;
-
-}
-
-
-.hero{
-
-background-image: url(https://designnotes.blog.gov.uk/wp-content/uploads/sites/53/2020/06/Portfolio-Desk-620x410.jpg);
-height: 500px;
-width: 1500px;
-color: white;
-position:relative;
-left: 99px;
-border-radius: 20px;
+    color:black; /*giving the color black to the paragraph located inside of header*/
+    font-size: large; /* increasing font size*/
+    display: inline-block; /*using this value to use only one space around the content of a line*/
+    position: relative; /*giving reference to the postion of parapgraph inside header*/
+    left: 1300px; /*moving it to the right*/
+    margin: 10px; /*creating space between contents of the paragraph section*/
 
 }
 
-.hero h1{
-
-    position: relative;
-    top: 50px;
-    left: 596px;
-    font-size: 27px;
-}
-
-
-
-.background-img-list{
-border-color: grey;
-border-style: solid;
-border-width: 5px;
-width:200px;
-background-color: #D3D3D3;
-height: 38px;
-padding: 10px;
-font-family: calibri;
-font-size: 20px;
-display: flex;
-flex-wrap: wrap;
-flex-direction: row;
-align-content: center;
-position: relative;
-top: 368px;
-}
-
-#one{
-padding-right: 10px;
-
-}
-
-#two{
-padding-right: 10px;
-
-}
-
-#three{
-padding-right: 10px;
-
-}
-
-#Hire-me{
-
-    position: relative;
-    top: 280px;
-    left: 493px;
-    height: 20px;
-    border-color: #d3d3d3;
-    border-width: 3px;
-    border-style: solid;
-    display: inline-block;
-    padding: 20px 15px;
-    background-color: gray;
-    font-size: large;
-
-}
-
-
-
-.about-me{
-
-    display: flex;
-    flex-wrap: wrap;
-   
-
-}
-
-.about-me h1{
-
-position: relative;
-top: 137px;
-padding-right: 31px;
-padding-left: 54px
-}
-
-.about-me p{
-
-    border-left: 10px solid #D3D3D3;
-    height: 226px;
-    padding-left: 63px;
-    padding-top: 62px;
-    margin-bottom: 59px;
-    margin-top: 59px;
-}
-
-
-
-.project-box{
-
-    border-width: 5px;
-    border-color: grey;
-    border-style: solid;
-    border-left: var(grey);
-    width: 200px;
-    height: 200px;
-}
-
-#first{
-
-   background-image: url(https://www.fitsw.com/blog/wp-content/uploads/2018/04/Managing-Personal-Training-Clients-Contact-1.png); 
-   background-size: 200px;
-   border-radius: 20px;
-}
-
-#second{
-   border-radius: 20px;
-   background-image: url(https://m.media-amazon.com/images/I/71hSAIENHkL._AC_UF894,1000_QL80_.jpg);
-   background-size: 200px;
-}
-
-#third{
-
-    background-image: url(https://play-lh.googleusercontent.com/QRKGUXdH6MkihzOR4o3kWpzeGWN2XCabrFmEQjLK8DGZB3qELnZHSlxDO0e7AKpVwS4);
-    background-size: 200px;
-    border-radius: 20px;
-    color: white;
-}
-
-#fourth{
-border-radius: 20px;
-background-image: url(https://www.amitree.com/wp-content/uploads/2021/08/the-pros-and-cons-of-paper-to-do-lists.jpeg);
-background-size: 200px;
-}
-
-
-
-
-
-
-.Work{
- display: flex;
- flex-wrap: wrap;
- flex-direction: row;
- align-items: center;
+                                     /*Styling the background image with content included*/       
  
+.hero{                            /*Adding style to content called hero where background image and mini boxes are located*/
+
+background-image: url(https://designnotes.blog.gov.uk/wp-content/uploads/sites/53/2020/06/Portfolio-Desk-620x410.jpg); /*url reference displaying the link*/
+height: 500px; /*specifying the height of my image*/
+width: 1500px; /*specifying the width of my image*/
+color: var(--text-color); /*assigning the CSS variable created on the root selector to the text color*/
+position:relative; /*giving position of the image inside the section*/
+left: 99px; /*moving image to the left by 99px to make it more in the center*/
+border-radius: 20px; /*giving a CSS property to round to corners of my background image*/
+
 }
 
-.Contact-me{
-display: flex;
-flex-wrap: wrap;
-align-items: center;
-position:relative;
-left: 70px;
+.hero h1{                       /*CSS selector of heading 1 of the hero section*/
+
+    position: relative; /*using the relative position to move heading to specific parts of hero section*/
+    top: 50px; /*moving to the bottom*/
+    left: 596px; /*moving to the right*/
+    font-size: 27px; /*giving a font size of 27 pixels to make it look even bigger*/
+}
+
+
+
+.background-img-list{          /*applying spcific properties to the text located inside of the background image*/
+border-color: grey; /*applying a grey color to my list border*/
+border-style: solid; /* applying a solid style to my list border*/
+border-width: 5px; /*applying the width to my list border*/
+width:200px; /*adjusting width size of border created to my list*/
+background-color: var(--border-color); /*adding background-color variable created on my root selector with the color assigned*/
+height: 38px; /*applying height property to my border list.*/
+padding: 10px; /*modifying the space between content of my list and the border*/
+font-family: calibri; /*assigning a CSS typography property called calibri, which is very used in word-process documents like Word, or PowerPoint*/
+font-size: 20px; /*giving a size of 20px to my list*/
+display: flex; /*converting my list into a flex container, so I can move the child elements around the container*/
+flex-wrap: wrap; /*wrapping child elements in case the space is reduced*/
+flex-direction: row; /*displaying my list elements into a row*/
+align-content: center; /*moving content to the center of the list boxes*/
+position: relative; /*giving a relative position to adjust the list with ither elements*/
+top: 368px; /*mvoing list towards the bottom due to personal preferences*/
+}
+
+#one{                      /*CSS selector specifying the first paragraph inside of the list*/
+padding-right: 10px;  /*increasing size inside of the first list to the right*/
 
 }
 
-.Contact-me h1{
+#two{                    /*CSS selector specifying the second paragraph inside of the list*/
+padding-right: 10px;   /*increasing size inside of the first list to the right*/
 
-    border-right: 10px solid #D3D3D3;
-    height: 226px;
-    padding-top: 193px;
 }
 
-.Contact-me p{
+#three{                /*CSS selector specifying the third paragraph inside of the list*/
+padding-right: 10px; /*increasing size inside of the first list to the right*/
 
-    padding:30px;
-    font-size: 24px;
+}
+
+#Hire-me{             /*CSS selector which selects the second element inside of the background image called Hire me*/
+
+    position: relative; /*assigning the relative postion to move content around the hire-me element*/
+    top: 280px; /*moving element to the bottom by 280px*/
+    left: 493px; /*moving to the right by 493px*/
+    height: 20px; /*specifying the height of the element*/
+    border-color: var(--border-color); /*assigning CSS variable declared on root selector with the color assigned*/
+    border-width: 3px; /*specifying the border width of the hire me element*/
+    border-style: solid; /*specifying the solid style to the element*/
+    display: inline-block; /*adding the display iunline block to only take as much as space insinde of the line*/
+    padding: 20px 15px; /*giving the values of 20 and 15px to top-right and botttom-left of my padding*/
+    background-color: gray; /*specifying the backgorund color of my hire me container*/
+    font-size: large; /*increasing font size by selecting large by default*/
+
+}
+
+                                /*Styling paragraph example about me section*/
+
+.about-me{               /*CSS selector applied to the about me section*/
+
+    display: flex; /*converting my about-me section into a flex container, so I can position child elements.*/
+    flex-wrap: wrap; /*wrapping child elements for any size changes*/
+   border: var(--border-2); /*applying CSS variable for border assigned on root selector*/
+
+}
+
+.about-me h1{        /*specifying the heading 1 of the about-me section*/
+
+position: relative; /*moving heading 1 by using relative position to my styling preferences.*/
+top: 137px; /*moving to the bottom by 137px*/
+padding-right: 31px; /*incrementing space between content and border to the right*/
+padding-left: 54px; /*incrementing space between content and border to the left*/
+color:var(--text-color); /*assiging CSS variable delcared on root selector with color assigned*/
+}
+
+.about-me p{       /*specifying the paragraph section of about-me flex container*/
+
+    border-left: 10px solid var(--border-color); /*assigning CSS variable for border color with additional values not included on this variable*/
+    height: 226px; /*specifying the height of paragraph elements*/
+    padding-left: 63px; /*incrementing space between content and border to the left*/
+    padding-top: 62px; /*incrementing space between content and border to the top*/
+    margin-bottom: 59px; /*increasing space between elements to the bottom*/
+    margin-top: 59px;  /*increasing space between elements to the top*/
+    color: var(--text-color); /*assigning the CSS variable with assigned color to the paragraph text*/
+}
+
+                         /*Styling work section where are projects located*/
+
+.project-box{  /*This selector specifies the projects of my Portfolio*/
+
+    border-width: 5px; /*giving a border width of 5px to each project card*/
+    border-color: var(--border-color); /*assigning CSS variable from root selector for coloring purposes*/
+    border-style: solid; /*specifying solid style to the project border*/
+    border-left: var(--border-color); /* assigning CSS variable for project box for coloring purposes*/
+    height: 200px; /*specifying the height of each project by 200px*/
+    width: 200px; /*specifying the width of each project box by 200px*/
+}
+
+#first{     /*this CSS selector specifies the elements of the first project*/
+
+   background-image: url(https://www.fitsw.com/blog/wp-content/uploads/2018/04/Managing-Personal-Training-Clients-Contact-1.png); /*applying background image for project 1*/
+   background-size: 200px; /*applying image size to the box dimensions for project 1*/
+   border-radius: 20px; /*rounding corners of project 1 box*/
+   color: var(--text-color); /*applying CSS variable to give color to the text inside of the box*/
+}
+
+#second{  /*this CSS selector specifies the elements of the second project*/
+   border-radius: 20px; /*rounding corners of project 2 box*/
+   background-image: url(https://m.media-amazon.com/images/I/71hSAIENHkL._AC_UF894,1000_QL80_.jpg); /*applying background image for project 2*/
+   background-size: 200px; /*applying image size to the box dimensions for project 2*/
+   color: var(--text-color); /*applying CSS variable to give color to the text inside of the box*/
+}
+
+#third{  /*this CSS selector specifies the elements of the third project*/
+
+    background-image: url(https://play-lh.googleusercontent.com/QRKGUXdH6MkihzOR4o3kWpzeGWN2XCabrFmEQjLK8DGZB3qELnZHSlxDO0e7AKpVwS4); /*applying background image for project 3*/
+    background-size: 200px; /*applying image size to the box dimensions for project 3*/
+    border-radius: 20px; /*rounding corners of project 3 box*/
+    color: var(--text-color); /*applying CSS variable to give color to the text inside of the box*/
+}
+
+#fourth{   /*this CSS selector specifies the elements of the fourth project*/
+border-radius: 20px; /*rounding corners of project 4 box*/
+background-image: url(https://www.amitree.com/wp-content/uploads/2021/08/the-pros-and-cons-of-paper-to-do-lists.jpeg); /*applying background image for project 4*/
+background-size: 200px; /*applying image size to the box dimensions for project 4*/
+color: var(--text-color); /*applying CSS variable to give color to the text inside of the box*/
+}
+
+#Co{  /*This CSS selector targets the project 1 paragraph called Contact-info*/
+border: var(--border); /*assigning CSS variable for border from root selector*/
+background-color: var(--background-color); /*assigning CSS variable for background color from root selector*/
+display: var(--display); /*assigning CSS variable for display from root selector*/
+}
+
+#Ca{ /*this CSS selector targets the proejct 2 paragraph content called Calculator*/
+border: var(--border); /*assigning CSS variable for border from root selector*/
+background-color: var(--background-color); /*assigning CSS variable for background color from root selector*/
+display: var(--display); /*assigning CSS variable for display from root selector*/
+}
+
+
+#wa{  /*this CSS selector targets the proejct 3 paragraph content called Weather App*/
+border: var(--border); /*assigning CSS variable for border from root selector*/
+background-color: var(--background-color); /*assigning CSS variable for background color from root selector*/
+display: var(--display); /*assigning CSS variable for display from root selector*/
+}
+
+
+#tdl{  /*this CSS selector targets the proejct 3 paragraph content called To-Do List*/
+border: var(--border); /*assigning CSS variable for border from root selector*/
+background-color: var(--background-color); /*assigning CSS variable for background color from root selector*/
+display: var(--display); /*assigning CSS variable for display from root selector*/
+}
+
+
+.Work{  /*this CSS selector targets the work sections which applies general style to the content inside of it, which are the projects*/
+ display: flex; /*converting work element into a flex container*/
+ flex-wrap: wrap; /*wrapping project elements inside of work container*/
+ flex-direction: row; /*ordering content with a row*/
+ justify-content: space-around; /*adding space between project boxes without using margin or padding proeprties*/
+ border-right: 10px solid var(--border-color); /*assigning CSS variable for border color and adding width and style preferences*/
+ color: var(--text-color); /*assigning a CSS variable to give color to the text inside work container*/
+ border: var(--border-2); /*assigning second CSS variable for border to add diffferent dimensions and style*/
+}
+
+                             /*Styling Contact information section*/
+
+.Contact-me{   /*CSS selector targeting the contact me section*/
+display: flex; /*converting this section into a flex container*/
+flex-wrap: wrap; /*wrapping child elements inside of it*/
+align-items: center; /*alignig text to the center of element*/
+position:relative; /*giving a  relative postion, so I can move the parent and child elements to the direction I want to*/
+left: 0px; /*setting left position to 0 by default*/
+color: var(--text-color); /*assigning CSS variable to give a color to text*/
+border: var(--border-2); /*assigning CSS variable to give a border dimensions and style*/
+} 
+
+
+
+.Contact-me h1{ /*CSS selector targeting only yhe heading 1 from contact-me element*/
+
+    border-right: 10px solid var(--border-color); /*assigning a CSS variable to border-right color and adding other preferenced values*/
+    height: 226px; /*specifying the height of my element*/
+    padding-top: 193px; /*increasing space of my element to the top*/
+}
+
+.Contact-me p{ /*CSS selector atrgeting only the paragraph content of my contact-me element*/
+
+    padding:30px; /*assigning a padding of 30px for each side*/
+    font-size: 24px; /*assigning a font size by 24px*/
     
 }
 
-footer{
+                          /*Styling footer*/
 
-background-color: #D3D3D3;
-color: white;
-text-align: center;
-padding: 30px;
+footer{ /*CSS selector targeting the footer section of my portfolio*/
+
+background-color: var(--border-color); /*assigning a CSS variable to give a specific background color to my element*/
+color: white; /*giving a white color to my text written*/
+text-align: center; /*aligning text tot the center of the footer*/
+padding: 30px; /*assigning a padding of 30 px for each side*/
 }
+
+                         /*applying media to make my website adjustable to any device or screensize*/
 
 @media screen and (max-width: 992px){
     header{
      
-        background-color: #D3D3D3;
+        background-color: var(--border-color);
         color:black;
         position: relative;
         display: flex;
