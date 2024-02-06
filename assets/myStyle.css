@@ -31,7 +31,7 @@ header{                                   /*Styling the header section in genera
     flex-wrap: wrap; /*wrapping child elements in case that space takes more than viewport*/
     flex-direction: row; /*displaying elements in a row*/
     justify-content: flex-start; /*adjusting child elements to the left*/
-    
+    width:1899px;
 }
 
 header h1{                               /*applying specific style for heading 1 located on header*/
@@ -135,7 +135,8 @@ padding-right: 10px; /*increasing size inside of the first list to the right*/
 
     display: flex; /*converting my about-me section into a flex container, so I can position child elements.*/
     flex-wrap: wrap; /*wrapping child elements for any size changes*/
-   border: var(--border-2); /*applying CSS variable for border assigned on root selector*/
+    border: var(--border-2); /*applying CSS variable for border assigned on root selector*/
+    width: 1572px;
 
 }
 
@@ -236,6 +237,7 @@ display: var(--display); /*assigning CSS variable for display from root selector
  border-right: 10px solid var(--border-color); /*assigning CSS variable for border color and adding width and style preferences*/
  color: var(--text-color); /*assigning a CSS variable to give color to the text inside work container*/
  border: var(--border-2); /*assigning second CSS variable for border to add diffferent dimensions and style*/
+ width: 1572px; /*specifying width for element*/
 }
 
                              /*Styling Contact information section*/
@@ -248,6 +250,7 @@ position:relative; /*giving a  relative postion, so I can move the parent and ch
 left: 0px; /*setting left position to 0 by default*/
 color: var(--text-color); /*assigning CSS variable to give a color to text*/
 border: var(--border-2); /*assigning CSS variable to give a border dimensions and style*/
+width: 1572px; /*specifying width for element*/
 } 
 
 
@@ -266,6 +269,12 @@ border: var(--border-2); /*assigning CSS variable to give a border dimensions an
     
 }
 
+.Contact-me:hover{
+
+    text-decoration: underline;
+    color: red;
+}
+
                           /*Styling footer*/
 
 footer{ /*CSS selector targeting the footer section of my portfolio*/
@@ -274,6 +283,7 @@ background-color: var(--border-color); /*assigning a CSS variable to give a spec
 color: white; /*giving a white color to my text written*/
 text-align: center; /*aligning text tot the center of the footer*/
 padding: 30px; /*assigning a padding of 30 px for each side*/
+width: 1532px;
 }
 
                          /*applying media to make my website adjustable to any device or screensize*/
